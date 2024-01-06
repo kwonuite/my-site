@@ -3,31 +3,38 @@
 <head>
 	<title>justineclementinemarie-francegerard</title>
 	<link rel="icon" href="img/smiley.png">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
 <!--header elements-->
 	<header>
-		<h1>justine clementine marie-france gerard</h1>
-		<a href="https://www.instagram.com/justineclementinemariefrance/" target="_blank" title="let's go to slay land">Click me I'm a cool Instagram link!</a>
+		<h1>justine clementine marie-france gerard 
+		<a href="https://www.instagram.com/justineclementinemariefrance/" target="_blank" title="Instagram">@justineclementinemariefrance</a>
+		</h1> 
 	</header>
 <!-- side navigation -->
 	<ul>
-		<li><a href="#">WORK</a></li>
-		<button class="dropdown-btn">Dropdown
-	    	<i class="fa fa-caret-down"></i>
-	  			</button>
-	  				<div class="dropdown-container">
-	    			<a href="#">feminist project</a>
-	   				 <a href="#">is this autism?</a>
-	    			<a href="#">lore</a>
-	  				</div>
+		<li>
+			<a href="#" id="dropdown-toggle">WORK (<-)</a>
+			<ul style="display: none" id="dropdown-content">
+				<li>
+					<a href="#">feminist project</a>
+				</li>
+				<li>
+					<a href="#">is this autism?</a>
+				</li>
+				<li>
+					<a href="#">lore</a>
+				</li>
+			</ul>
+		</li>
 		<li><a href="#">I'M COOL</a></li>
 		<li><a href="#">CONTACT</a></li>
 	</ul>
 <!--main elements-->
 	<main>
 		<p>
-			<h1 style="color: #FF23CD; font-size: 60px;">Hey *wink wink*</h1>
+			<p>Hey *wink wink*</p>
 			<p>My name is:<br>
 			Justine</p>
 			<img src="img/winkwinkslay.gif">
@@ -40,6 +47,20 @@
 			this website was created during a breakdown, wish me luck! &copy; Justine
 		</p>
 	</footer>
+
+	<script>
+		var dropdownToggle = document.getElementById("dropdown-toggle");
+		var dropdownContent = document.getElementById("dropdown-content");
+
+		dropdownToggle.addEventListener("click", function () {
+			if ( dropdownContent.style.display == "block" ) {
+				dropdownContent.style.display = "none";
+			} else {
+
+			dropdownContent.style.display = "block";
+			}
+		})
+	</script>
 
 </body>
 </html>
