@@ -5,8 +5,29 @@ body {
 
 header h1 {
 	font-size: 12px;
+	padding: 30px;
 }
 
 header h1 a {
 	font-weight: normal;
+}
+
+.sidebar {
+	background-color: white;
+   	width: 300px;
+}
+
+ul li{
+	height: 30px;
+	font-size: 12px;
+}
+
+ul li a{
+	text-decoration-line: none;
+	text-decoration-color: black;
+	color: black;
+}
+
+ul li a:hover{
+text-decoration: underline;
 }
