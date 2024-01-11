@@ -31,3 +31,16 @@ ul li a{
 ul li a:hover{
 text-decoration: underline;
 }
+
+.flex-container {
+	display: flex;
+}
+
+.sidebar {
+	width: 300px;
+	flex-shrink: 0;
+}
+
+main {
+	width: 100%;
+}
